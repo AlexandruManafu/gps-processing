@@ -32,10 +32,14 @@ router.post('/', async (req, res) => {
 })
 
 // Deleting One
-router.delete('/:id', getValue, async (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
-    await res.value.remove()
-    res.json({ message: 'Deleted Value' })
+    const result = await GpsPoint.findByIdAndDelete(req.params.id);
+    if(result != null){
+      res.json({ message: 'Deleted Value' })
+    } else {
+      throw new Error("Cannot Find "+req.params.id);
+    }
   } catch (err) {
     res.status(500).json({ message: err.message })
   }

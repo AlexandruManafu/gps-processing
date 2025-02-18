@@ -1,0 +1,17 @@
+GET http://localhost:3000/gpsPoints
+
+###
+
+POST http://localhost:3000/gpsPoints
+Content-Type: application/json
+
+{
+    "Vehicul": "test",
+    "Pozitia": "test",
+    "lat": 0,
+    "lng": 0
+}
+
+###
+
+DELETE http://localhost:3000/gpsPoints/67b469efdf2de57e8cb46de5
