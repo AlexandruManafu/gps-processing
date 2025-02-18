@@ -1,5 +1,8 @@
 //require('dotenv').config()
 
+// Use the PORT environment variable set by Heroku or default to 3000
+const port = process.env.PORT || 3000
+
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
@@ -14,4 +17,4 @@ app.use(express.json())
 const gpsPointsRouter = require('./routes/gpsPoints');
 app.use('/gpsPoints', gpsPointsRouter)
 
-app.listen(3000, () => console.log('Server Started'))
+app.listen(port, () => console.log('Server Started'))
