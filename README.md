@@ -17,6 +17,9 @@
 Add the following environment variables:
     DATABASE_URL="mongo.link"
 
+4. **Addons for dev (optional)**
+Install Visual Studio Code and add the REST Client package
+
 ## Run the development server
     ```bash
     npm run devStart
