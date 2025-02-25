@@ -1,5 +1,10 @@
 # Excel Reports REST server
 
+## Additional Info
+In MongoDB, schemas aren't stored in the database itself; they are part of the application code.
+
+Mongoose enforces the schema rules when documents are created or updated. The actual documents in MongoDB don’t inherently have a fixed schema.
+
 ## Installation
 
 1. **Clone the repository:**

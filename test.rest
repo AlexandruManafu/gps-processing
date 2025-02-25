@@ -6,12 +6,34 @@ POST http://localhost:3000/gpsPoints
 Content-Type: application/json
 
 {
+    "Nr": "test",
     "Vehicul": "test",
+    "Data": "date",
     "Pozitia": "test",
-    "lat": 0,
-    "lng": 0
+    "Lat": "test",
+    "Lng": "test",
+    "Stare heblu": "test",
+    "Viteza": "test",
+    "Buton panica": "test",
+    "Motor auxiliar": "test",
+    "Motor cu perii": "test",
+    "Pompa hidraulica": "test",
+    "Nivel carburant": "test",
+    "AIN": "test",
+    "Turatie sasiu": "test",
+    "Index kilometri": "test",
+    "Consum combustibil": "test",
+    "Turatie auxiliar": "test",
+    "Actionare frana": "test",
+    "Actionare ambreiaj": "test",
+    "Sistem auxiliar 1 Lichid": "test",
+    "Sistem auxiliar 1 Solid": "test",
+    "Sistem auxiliar 2 fara SA1": "test",
+    "Sistem auxiliar 2 cu SA1": "test",
+    "Sistem auxiliar 2 Total": "test",
+    "Can": "test"
 }
 
 ###
 
-DELETE http://localhost:3000/gpsPoints/67b469efdf2de57e8cb46de5
+DELETE http://localhost:3000/gpsPoints/67bd9514114b3358f9840509
