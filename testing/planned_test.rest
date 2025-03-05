@@ -1,0 +1,26 @@
+GET http://localhost:3000/plannedRoute
+
+###
+
+POST http://localhost:3000/plannedRoute
+Content-Type: application/json
+
+{
+  "tip": "test",
+  "strada": "test",
+  "data": "test",
+  "luni": false,
+  "marti": false,
+  "miercuri": false,
+  "joi": false,
+  "vineri": false,
+  "sambata": false,
+  "duminica": false
+}
+
+###
+
+DELETE http://localhost:3000/plannedRoute/67c8947cc8a8d0b3c1495f2b
+
+
+####

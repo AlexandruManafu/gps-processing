@@ -36,4 +36,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/gpsPoints/67bd9514114b3358f9840509
+DELETE http://localhost:3000/gpsPoints/67c892dfca55559751c093f7
+
+
+####
