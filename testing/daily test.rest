@@ -1,57 +1,11 @@
-POST http://localhost:3000/dailyReport
-Content-Type: application/json
+GET http://localhost:3000/dailyReport/2025-01-15
 
-[
-{
-        "Nr": 1,
-        "Vehicul": "B-100-AIC",
-        "Data": "6 Jan 2025 00:01:37",
-        "Pozitia": "CHITILA, Garaj Chitila",
-        "Stare heblu": "activ",
-        "Viteza": "Indisponibil",
-        "Buton panica": "NU",
-        "Motor auxiliar": "indisponibil",
-        "Motor cu perii": "indisponibil",
-        "Pompa hidraulica": "NU",
-        "Nivel carburant": 0,
-        "AIN": "Indisponibil",
-        "Turatie sasiu": "Indisponibil",
-        "Index kilometri": "Indisponibil",
-        "Consum combustibil": "Indisponibil",
-        "Turatie auxiliar": "Indisponibil",
-        "Actionare frana": "Indisponibil",
-        "Actionare ambreiaj": "Indisponibil",
-        "Sistem auxiliar 1 Lichid": "NU",
-        "Sistem auxiliar 1 Solid": "-",
-        "Sistem auxiliar 2 fara SA1": "Indisponibil",
-        "Sistem auxiliar 2 cu SA1": "Indisponibil",
-        "Sistem auxiliar 2 Total": "Indisponibil",
-        "Can": "activ"
-    },
-    {
-        "Nr": 2,
-        "Vehicul": "B-100-AIC",
-        "Data": "6 Jan 2025 00:03:37",
-        "Pozitia": "CHITILA, Garaj Chitila",
-        "Stare heblu": "activ",
-        "Viteza": "Indisponibil",
-        "Buton panica": "NU",
-        "Motor auxiliar": "indisponibil",
-        "Motor cu perii": "indisponibil",
-        "Pompa hidraulica": "NU",
-        "Nivel carburant": 0,
-        "AIN": "Indisponibil",
-        "Turatie sasiu": "Indisponibil",
-        "Index kilometri": "Indisponibil",
-        "Consum combustibil": "Indisponibil",
-        "Turatie auxiliar": "Indisponibil",
-        "Actionare frana": "Indisponibil",
-        "Actionare ambreiaj": "Indisponibil",
-        "Sistem auxiliar 1 Lichid": "NU",
-        "Sistem auxiliar 1 Solid": "-",
-        "Sistem auxiliar 2 fara SA1": "Indisponibil",
-        "Sistem auxiliar 2 cu SA1": "Indisponibil",
-        "Sistem auxiliar 2 Total": "Indisponibil",
-        "Can": "activ"
-    }
-]
+### 15 Jan 2025
+
+GET http://localhost:3000/dailyReport/2025-02-15
+
+### 15 Feb 2025
+
+GET http://localhost:3000/dailyReport/
+
+###

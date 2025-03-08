@@ -1,4 +1,4 @@
-//require('dotenv').config()
+require('dotenv').config()
 
 // Use the PORT environment variable set by Heroku or default to 3000
 const port = process.env.PORT || 3000
@@ -24,5 +24,8 @@ app.use('/plannedRoute', plannedRouter)
 
 const dailyRouter = require('./routes/dailyReport');
 app.use('/dailyReport', dailyRouter)
+
+const cumulatedRouter = require('./routes/cumulatedReport');
+app.use('/cumulatedReport', cumulatedRouter)
 
 app.listen(port, () => console.log('Server Started'))

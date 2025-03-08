@@ -1,3 +1,5 @@
 .env
 node_modules
-route.rest
+input.json
+points.json
+__pycache__

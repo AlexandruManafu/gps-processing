@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/plannedRoute/67c8947cc8a8d0b3c1495f2b
+DELETE http://localhost:3000/plannedRoute/67cc48d2d639acc8bb17aa9f
 
 
 ####

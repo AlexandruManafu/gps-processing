@@ -10,8 +10,16 @@ const moment = require('moment');
 router.get('/', async (req, res) => {
   try {
   
-    const input = await GpsPoint.find().exec();
-    const pythonResult = await runPythonScript('./python/CumulateEffectuate.py', input);
+    const [points, plan] = await Promise.all([
+      GpsPoint.find().exec(),
+      Planned.find().exec(),
+    ]);
+
+    const input = {
+      points: points,
+      plan: plan
+    }
+    const pythonResult = await runPythonScript('./python/Compare-Better-3.py', input);
     res.status(200).json(JSON.parse(pythonResult))
 
     } catch (err) {
@@ -41,14 +49,15 @@ router.get('/:date', async (req, res) => {
               { $lt: [{ $dateFromString: { dateString: "$Data" } }, endOfWeek] }
           ]
       }
-  });  
+    });
 
-    if(results.length == 0){
-      res.status(200).json({})
-      return;
+    const plan = await Planned.find().exec();
+    const input = {
+      points: results,
+      plan: plan
     }
 
-    const pythonResult = await runPythonScript('./python/CumulateEffectuate.py', results);
+    const pythonResult = await runPythonScript('./python/Compare-Better-3.py', input);
 
     res.status(200).json(JSON.parse(pythonResult))
   } catch (err) {
