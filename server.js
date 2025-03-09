@@ -4,7 +4,10 @@
 const port = process.env.PORT || 3000
 
 const express = require('express')
-const app = express()
+const app = express();
+// Enable CORS for all routes
+app.use(cors());
+
 const mongoose = require('mongoose')
 const GpsPoint = require("./models/gpsPoint");
 const PlannedRoute = require("./models/plannedRoute");
